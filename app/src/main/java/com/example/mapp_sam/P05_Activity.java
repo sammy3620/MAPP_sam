@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.*;
 
 public class P05_Activity extends AppCompatActivity {
     String msg = "P05_Activity Sam";
@@ -17,6 +18,10 @@ public class P05_Activity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d(msg, "The onStart() event");
+    }
+
+    public	void	launchSecondActivity(View view)	{
+        Log.d("MainActivity",	"Button clicked!");
     }
 
 }
